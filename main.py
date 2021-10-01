@@ -65,3 +65,29 @@ encoded = permuter.encode(to_encode)
 print('encoded:', encoded)
 print('box:')
 permuter.print()
+
+
+print()
+print('Омофоны')
+from Homophone import Homophone
+
+permuter = Homophone('а', 'я', 3, 124123)
+
+to_encode = "ехехехе"
+print('start:', to_encode)
+encoded = permuter.encode(to_encode)
+print('encoded:', encoded)
+print('table:')
+permuter.print()
+
+
+print()
+print('Виженер')
+from Vigenere import Vigenere
+
+permuter = Vigenere('а', 'я', 'дядина')
+
+to_encode = "абрамов"
+print('start:', to_encode)
+encoded = permuter.encode(to_encode)
+print('encoded:', encoded)
